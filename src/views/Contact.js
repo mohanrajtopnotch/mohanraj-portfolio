@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
 import ConnectWithMe from "../components/ConnectWithMe";
 import Footer from "../components/Footer";
@@ -26,7 +27,13 @@ function Resume() {
         <h4 class="font-weight-bold" style={{ fontSize: "30px" }}>
           Click to Download My Resume
         </h4>
-        <a class="btn-floating btn btn-primary" href="https://raw.githubusercontent.com/MohanrajVenkatachalamKncet/portfolio-images/main/Mohanraj_Venkatachalam_Resume.pdf" style={{color:'white'}}>Resume</a>
+        <a
+          class="btn-floating btn btn-primary"
+          href="https://raw.githubusercontent.com/MohanrajVenkatachalamKncet/portfolio-images/main/Mohanraj_Venkatachalam_Resume.pdf"
+          style={{ color: "white" }}
+        >
+          Resume
+        </a>
       </div>
     </div>
   );
@@ -70,7 +77,7 @@ export default function contact() {
       <AddressMap />
       <hr class="my-4"></hr>
       <ContactDetails />
-      <Resume/>
+      <Resume />
       <ConnectWithMe />
       <Footer />
     </div>

@@ -552,7 +552,7 @@ export default function Projects() {
     <div>
       <Header />
       <title>Mohanraj Portfolio - Projects</title>
-      <ProjectsSampleCardList />
+      {/* <ProjectsSampleCardList /> */}
       <ProjectsCardList />
       <InternshipsCard />
       <ProjectsCard />

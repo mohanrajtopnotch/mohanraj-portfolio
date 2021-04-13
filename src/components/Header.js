@@ -1,4 +1,5 @@
-import React, { StyleSheet } from "react";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from "react";
 import { Link } from "react-router-dom";
 export default function Header() {
   return (
@@ -50,6 +51,35 @@ export default function Header() {
                 Contact
               </Link>
             </li>
+            <li class="nav-item ml-4 mr-4">
+              <Link to="/Kncetians" class="nav-link" style={styles.navLinkCol}>
+                Kncetians
+              </Link>
+            </li>
+            <li class="nav-item ml-4 mr-4">
+              <Link to="/CountryHen" class="nav-link" style={styles.navLinkCol}>
+                CountryHen
+              </Link>
+            </li>
+            <li class="nav-item ml-4 mr-4">
+              <Link to="/Vimarza" class="nav-link" style={styles.navLinkCol}>
+                Vimarza
+              </Link>
+            </li>
+            <li class="nav-item ml-4 mr-4">
+              <Link to="/Quiz" class="nav-link" style={styles.navLinkCol}>
+                Quiz
+              </Link>
+            </li>
+            <li class="nav-item ml-4 mr-4">
+              <Link
+                to="/CarAnimation"
+                class="nav-link"
+                style={styles.navLinkCol}
+              >
+                Animation
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
@@ -59,6 +89,6 @@ export default function Header() {
 const styles = {
   navLinkCol: {
     color: "white",
-    fontSize: "20px",
+    fontSize: "15px",
   },
 };

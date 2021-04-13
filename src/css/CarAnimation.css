@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+  }
+  @keyframes slidein {
+    from {
+      right: 80%;
+    }
+    to {
+      right: 0px;
+    }
+  }
+  @keyframes slideout {
+    from {
+      left: 15%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  @keyframes slideout-car {
+    from {
+      left: 80%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      margin: 1px;
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .wrapper {
+    display: flex;
+    width: 100%;
+    height: 568px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 215, 246);
+  }
+  .display-container {
+    width: 80%;
+    height: 60%;
+    background-color: #98e44d;
+    border: 20px solid rgb(45 42 42);
+    display: flex;
+    flex-direction: column;
+  }
+  .background-view {
+    flex: 1;
+    flex-direction: column;
+    height: 50px;
+    background-color: rgb(220, 254, 255);
+    width: 100%;
+  }
+  .background-wrapper {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    right: 10px;
+    top: 10px;
+  }
+  .sun-wrapper {
+    position: relative;
+    animation: 5s ease-in 1s infinite reverse both running slidein;
+  }
+  .sun {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: rgb(255, 238, 80);
+    position: relative;
+  }
+  .cloud-wrapper {
+    width: 200px;
+    height: 100px;
+    display: -moz-inline-box -webkit-inline-box;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    animation: 5s ease-in 1s infinite reverse both running slideout;
+  }
+  
+  .cloud1 {
+    width: 60px;
+    background-color: rgb(113, 255, 236);
+    border-radius: 40px 40px 0px 0px;
+    position: relative;
+    top: 30px;
+  }
+  .cloud2 {
+    width: 60px;
+    height: 117px;
+    background-color: rgb(113, 255, 236);
+    border-radius: 40px 40px 0px 0px;
+    position: relative;
+  }
+  .cloud3 {
+    width: 60px;
+    background-color: rgb(113, 255, 236);
+    border-radius: 40px 40px 0px 0px;
+    position: relative;
+    top: 50px;
+  }
+  .road-wrapper {
+    background-color: rgb(39, 35, 35);
+    position: relative;
+    top: -70px;
+  }
+  .road {
+    flex-direction: column;
+    position: relative;
+    height: 70px;
+    background-color: rgb(39, 35, 35);
+    transform: perspective(900px) rotateX(40deg) scale(1);
+    box-shadow: 0px 20px 100px #555;
+  }
+  .road-line {
+    border: 1px white dashed;
+    position: relative;
+    top: 35px;
+  }
+  .car {
+    position: relative;
+    z-index: 1;
+    top: 8px;
+    border: 2px solid black;
+    border-radius: 10px 20px 0px 0px;
+    background-color: darkorange;
+    width: 100px;
+    height: 60px;
+    margin-left: 4px;
+    animation: 5s ease-in 1s infinite reverse both running slideout-car;
+  }
+  .car-window {
+    border: black 3px dashed;
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    margin: 4px;
+  }
+  .car-door {
+    border: black 10px dashed;
+    background-color: black;
+    height: 13px;
+    width: 10px;
+    margin: 4px;
+  }
+  .car-line {
+    border: black 3px dashed;
+    position: relative;
+    right: 64px;
+    background-color: black;
+    height: 40px;
+    width: 100px;
+    margin: 4px;
+    transform: rotate(90deg);
+  }
+  
+  .car-front-wheel {
+    background-color: rgb(0, 0, 0);
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
+    display: table;
+    position: relative;
+    top: 40px;
+    right: 66px;
+    animation: rotating 2s linear infinite;
+  }
+  
+  .car-back-wheel {
+    background-color: rgb(0, 0, 0);
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
+    display: table;
+    position: relative;
+    top: 40px;
+    right: 102px;
+    animation: rotating 2s linear infinite;
+  }
+  
+  .car-front-wheel-dot {
+    background-color: rgb(255 0 0);
+    height: 10px;
+    width: 10px;
+    border-radius: 20px;
+    display: table;
+    position: relative;
+    top: 48px;
+    right: 94px;
+  }
+  
+  .car-back-wheel-dot {
+    background-color: rgb(255 0 0);
+    height: 10px;
+    width: 10px;
+    border-radius: 20px;
+    display: table;
+    position: relative;
+    top: 48px;
+    right: 145px;
+  }
+  
